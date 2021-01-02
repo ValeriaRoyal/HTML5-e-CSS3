@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Broto - Genrenciado de tempo de germinação de sementes">
+    <meta name="keywords" content="App, semente, tempo, germinar">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Valéria Regina">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/sement.png">
     <title></title>
 </head>
+
 <body>
-    <header>
-        <img src="https://images.unsplash.com/photo-1508216319365-212ed144314d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Campo florido no crepusculo">
-        <h1>Flores</h1>
+    <header class="cbc">
+        <a href="index.html">
+            <h1 class="logo">Broto - Genrenciado de tempo de germinação de sementes</h1>
+        </a>
+
+        <input type="checkbox" name="" id="checkbox-menu">
+        <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+            <nav class="menu">
+                <a class="btn-close">X</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
     </header>
-    <section>
-        <header>
-            Posts
-        </header>
-        <article>
-            <header>
-                <h3>Post #1</h3>
-            </header>
-            <img src="https://images.unsplash.com/photo-1557948850-b52cb5f48253?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="Margarida sozinha">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat delectus omnis, aperiam consequuntur officia aliquid a nam, 
-            <a href="https://seer.imed.edu.br/index.php/raimed/article/view/1265/1246" target="_blank">perspiciatis veniam distinctio culpa voluptates</a>, similique tempore ipsum recusandae dolor ad impedit id!</p>
-        </article>
-    </section>
     <footer>
-        <ul>
-            <li><a href="mailto:" target="_blank">Linkedin</a></li>
-            <li><a href="mailto:" target="_blank">GitHub</a></li>
-            <li><a href="mailto:" target="_blank">Portifólio</a></li>
-        </ul>
-        
     </footer>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script>
+        $("#checkbox-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        });
+    </script>
 </body>
+
 </html>
